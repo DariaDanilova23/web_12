@@ -1,0 +1,264 @@
+*{
+    margin:0;
+    padding:0;
+    font:100% Gotham Pro;
+}
+body{
+    background-color:#02b2b0;
+    background-position:center;
+    background-size:cover;
+}
+.body_stop{
+    overflow: hidden;
+}
+
+.scroll_stop{
+    opacity: 0.6;
+    background-color:#a2dddc;
+}
+.container{
+    position:relative;
+    width:100%;
+    min-height: 100vh;
+    overflow: hidden;
+    margin: auto;
+}
+
+img.img_logo{
+    height:100% ;
+    position: relative;
+    min-width: 3vw;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    position:relative;
+    background-color:#ffff;
+    width:100%;
+    height:18vmin;
+}
+
+.top_left{
+    line-height: 18vmin;
+    float:left;
+    width: 30%;
+    height: 100%;
+}
+.top_right{
+    float: right;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    flex-direction: row-reverse;
+    height: 100%;
+}
+
+.nav-item{
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    font-size: 2vmin;
+    height: 8vmin;
+    width: 8vmin;
+}
+.navbar-nav li{
+    cursor: pointer;
+}
+.nav-link{
+    color: #02b2b0;
+}
+.nav-link img{
+    height: 100%;
+    width: 100%;
+}
+#app{
+    z-index: 100;
+}
+.container-popup{
+    display: none;
+}
+.container-popup.active{
+    display:block;
+    top:0;
+    background-color: rgba(0,0,0,0.8);
+    width:100%;
+    height: 100%;
+    position:fixed;
+    margin: 0 auto;
+    z-index: 70;
+}
+input{
+    border:  2px solid #02b2b0;
+    border-radius: 5px;
+    color: #02b2b0;
+}
+.popup-login{
+    margin: 10% auto;
+    border-radius: 20px;
+    display: block;
+    width: 70vmin;
+    height: 70vh;
+    color: #02b2b0;
+    background-color: white;
+    z-index: -1000;
+}
+.container_form{
+    max-height: 80%;
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: 2.8vmin;
+}
+.container_login ul{
+    position: relative;
+    width: 100%;
+    display: flex;
+    list-style: none;
+}
+.container_login a{
+    position: relative;
+    text-decoration: none;
+}
+
+
+.basket{
+    background-color:transparent;
+    border:0;
+    height: 50%;
+    cursor:pointer;
+    width: 8vmin;
+}
+.basket img{
+    width:100%;
+}
+.user-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.user-login img{
+    width:100%;
+    height: 100%;
+}
+.openMenu{
+    cursor:pointer;
+    z-index: 8;
+    border:0;
+    margin-left: 4%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.25;
+    position: relative;
+    color:#02b2b0;
+    background: transparent;
+    font-size:7vmin;
+}
+.openMenu_active{
+    transform:rotate(90deg);
+}
+
+.flex-block{
+    position: relative;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.close{
+    float:right;
+    cursor:pointer;
+    border: 0;
+    margin-top: 1%;
+    margin-right: 3%;
+    background: transparent;
+}
+.row a, .btn button{
+    cursor:pointer;
+}
+
+.button_enter{
+    display: inline-block;
+    background-color: #eaeaea;
+    color: #02b2b0;
+    border: 0.3vmin solid #02b2b0;
+    border-radius: 36px;
+    font-size: 2vmin;
+    padding: 2vmin 3vmin;
+    margin-top: 2%;
+    transition: all 0.8s ease;
+}
+
+.button_enter:hover{
+    text-decoration: none;
+    background-color: #02b2b0;
+    color: #ffeded;
+    border-color: #02b2b0;
+}
+.menu{
+    z-index:10;
+    position:absolute;
+    width:30vw;
+    transition:0.5s;
+    transform:translateX(-101%);
+}
+.menu_active{
+    transform:translateX(0%);
+    background-color:#02b2b0;
+    height: 100vh;
+}
+.menu-list{
+    display:flex;
+    width:100%;
+    height:82vmin;
+    justify-content:space-around;
+    min-width:10%;
+    flex-direction:column;
+}
+.dropdown-item img{
+    width: 8vmin;
+    height: 8vmin;
+}
+.menu-list a{
+    text-decoration:none;
+    font:100% Gotham Pro;
+    color:#ffff;
+    text-align:center;
+    min-width:10%;
+    width:100%;
+    height: 13.66vmin;
+    line-height: 13.66vmin;
+    font-size:3vmin;
+}
+.menu-list a:hover{
+    color:#02b2b0;
+    background:#ffff;
+}
+footer{
+    display:grid;
+    grid-template-columns:30% 10% 5% 10% 5% 10% 30%;
+    height:15vmin;
+    background-color:#ffff;
+    z-index:2;
+}
+footer button{
+    background: transparent;
+    border:0;
+}
+footer button.inst{
+    grid-column-start:2;
+    text-align:center;
+}
+footer button.telega{
+    grid-column-start:4;
+    text-align:center;
+}
+footer button.vk{
+    grid-column-start:6;
+    text-align:center;
+}
+footer button img{
+    width:6vmin;
+    background: transparent;
+}

@@ -1,0 +1,77 @@
+section.catalog{
+    position:relative;
+    align-items:center;
+    width:70%;
+    color: white;
+    margin:0 auto;
+}
+
+.container{
+    padding-top: 10vmin;
+    width:100%;
+}
+
+.container h1{
+    text-align:center;
+    color:white;
+    font-size:2vw;
+}
+.img_catalog{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(40vmin,20vmin));
+    flex-shrink: 1;
+    justify-content:center;
+    align-items:center;
+}
+.catalog-item{
+    width: 100%;
+    height: 100%;
+    position:relative;
+    overflow: hidden;
+    margin: auto;
+}
+.photo{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+/*galry-list*/
+.catalog-link{
+    width: 100%;
+    height: 100%;
+}
+.img-catalog{
+    position:relative;
+    display:grid;
+    justify-content:center;
+    align-items:center;
+    grid-template-columns: repeat(auto-fill,minmax(40vmin,1fr));
+}
+
+.catalog-item-hover{
+    position:absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background-color:rgba(0,0,0,.3);
+    color:#ffff;
+    font-size:6vmin;
+    display:grid;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+    opacity:0;
+    transition:opacity .5s ease;
+}
+.catalog-item:hover .catalog-item-hover{
+    opacity:1;
+}
+
+.img-catalog img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}

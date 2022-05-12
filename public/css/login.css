@@ -1,0 +1,31 @@
+/*.content{
+    padding-top: 10vh;
+    height: 85vh;
+}
+.card-body{
+    margin: auto;
+    border-radius: 20px;
+    background-color: white;
+    align-items: center;
+    display: block;
+    width: 70vmin;
+    height: 40vh;
+    color: black;
+}
+
+form {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    color: black;
+
+}*/
+.card-header{
+    margin: 0 auto;
+}
+
+.register{
+    display: inline-block;
+    text-decoration: none;
+    color:grey;
+}
